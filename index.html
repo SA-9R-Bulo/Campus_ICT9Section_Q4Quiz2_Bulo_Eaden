@@ -169,34 +169,28 @@ body {
    var SS = Number(document.getElementById("Grade5").value);
    var ICT = Number(document.getElementById("Grade6").value);
 
-
-   var ave = ((science + math + english)/3).toFixed(2);
+   var ave = ((science + math + english + filipino + SS + ICT) / 6).toFixed(2);
 
    switch (true) {
-   case (ave >= 94 && ave <= 100):
-        alert("Your average is " + ave + " - Excellent!");
-        break;
-
-   case (ave >= 87 && ave <= 93.99):
-        alert("Your average is " + ave + " - Above Satisfactory");
-        break;
-
-   case (ave >= 80 && ave <= 86.99):
-        alert("Your average is " + ave + " - Satisfactory");
-        break;
-
-   case (ave >= 75 && ave <= 79.99):
-        alert("Your average is " + ave + " - Needs Improvement");
-        break;
-
-   case (ave >= 70 && ave <= 74.99):
-        alert("Your average is " + ave + " - Poor");
-        break;
-    default:
-        alert("Failing. Study harder.");
+      case (ave >= 94 && ave <= 100):
+         alert("Your average is " + ave + " - Excellent!");
+         break;
+      case (ave >= 87 && ave <= 93.99):
+         alert("Your average is " + ave + " - Above Satisfactory");
+         break;
+      case (ave >= 80 && ave <= 86.99):
+         alert("Your average is " + ave + " - Satisfactory");
+         break;
+      case (ave >= 75 && ave <= 79.99):
+         alert("Your average is " + ave + " - Needs Improvement");
+         break;
+      case (ave >= 70 && ave <= 74.99):
+         alert("Your average is " + ave + " - Poor");
+         break;
+      default:
+         alert("Failing. Study harder.");
    }
-
-   }
+}
 
    
    
